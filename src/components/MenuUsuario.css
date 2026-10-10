@@ -1,0 +1,53 @@
+.user-menu {
+  position: relative;
+  justify-self: end;
+}
+
+.user-menu-trigger {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.user-menu-trigger:focus-visible,
+.user-menu-logout:focus-visible {
+  outline: 2px solid #176b52;
+  outline-offset: 3px;
+}
+
+.user-menu-popover {
+  position: absolute;
+  z-index: 120;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 176px;
+  padding: 5px;
+  border: 1px solid #e0e7dd;
+  border-radius: 7px;
+  background: #fffefa;
+  box-shadow: 0 8px 24px rgba(38, 58, 49, 0.14);
+}
+
+.user-menu-logout {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 4px;
+  color: #8c3732;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+}
+
+.user-menu-logout:hover {
+  background: #f8ece9;
+}
+
+@media (max-width: 560px) {
+  .user-menu {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
